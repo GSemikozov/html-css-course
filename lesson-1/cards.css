@@ -1,0 +1,94 @@
+body {
+  /* резиновый текст по умолчанию для всей страницы */
+   /*font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));*/
+}
+.flex-container {
+  /* flex container */
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+}
+.flex-container > * {
+  margin: 10px;
+}
+.grid-container {
+  /* grid container */
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 10px;
+}
+
+@media all and (min-width: 992px) {
+  .flex-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .flex-container > * {
+    flex: 1 0 33.3333%;
+    max-width: calc(33.3333% - 20px);
+  }
+
+  .grid-container {
+    grid-template-columns: calc(33.3% - 10px) calc(33.3% - 10px) calc(
+            33.3% - 10px
+    );
+  }
+}
+
+.card {
+  border: 1px solid #000;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.card__header {
+  height: 200px;
+  background-color: grey;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.card__header:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.card__body,
+.card__footer {
+  padding: 24px;
+}
+
+.card__body {
+  /* with sticky footer */
+  /*flex-grow: 1;*/
+}
+
+.card__title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 3vw;
+}
+
+.card__text {
+  word-break: break-word;
+  font-size: 3vmin;
+}
+
+@media all and (min-width: 768px) {
+  .card__text {
+    font-size: 2vmin;
+  }
+}
