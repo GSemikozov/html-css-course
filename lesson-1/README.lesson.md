@@ -58,8 +58,8 @@ Playgrounds, или песочницы: `cssdeck.com` , `jsbin.com`, `jsfiddle.n
   - Дерево документы - :first-child, :last-child, :nth-child(), :not(), :last-of-type, :root и др.
 - Псевдоэлементы (:before, :after, :first-letter, :first-line)
 - Каскады и приоритет выполнения css
-  - 1. стили браузера -> стили автора -> стили пользователя -> автор + !important -> пользователь + !important
-  - 2. Специфичность селекторов \* -> li -> li:first-child -> ul li -> ul ol + li -> ul li.class -> li.class.class -> #id -> #id #nextid
+  - стили браузера -> стили автора -> стили пользователя -> автор + !important -> пользователь + !important
+  - Специфичность селекторов \* -> li -> li:first-child -> ul li -> ul ol + li -> ul li.class -> li.class.class -> #id -> #id #nextid
 - Наследование - перенос правил форматирования для элементов, находящихся внутри других (`p.red span?`)
 - Валидация css - `http://jigsaw.w3.org/css-validator/`
 
