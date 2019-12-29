@@ -59,7 +59,7 @@ Playgrounds, или песочницы: `cssdeck.com` , `jsbin.com`, `jsfiddle.n
 - Псевдоэлементы (:before, :after, :first-letter, :first-line)
 - Каскады и приоритет выполнения css
 
-  - 1. стили браузера -> стили автора -> стили пользователя -> автор + !important -> пользователь + !important ;
+  - 1. стили браузера -> стили автора -> стили пользователя -> автор + !important -> пользователь + !important
   - 2. Специфичность селекторов \* -> li -> li:first-child -> ul li -> ul ol + li -> ul li.class -> li.class.class -> #id -> #id #nextid
 
 - Наследование - перенос правил форматирования для элементов, находящихся внутри других (`p.red span?`)
