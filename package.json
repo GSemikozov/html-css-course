@@ -1,0 +1,31 @@
+{
+  "name": "html-css-course",
+  "version": "1.0.0",
+  "description": "teach course with tasks book",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "localhost": "node --max-old-space-size=4096 node_modules/webpack-dev-server/bin/webpack-dev-server.js --open",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GSemikozov/html-css-course.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GSemikozov/html-css-course/issues"
+  },
+  "homepage": "https://github.com/GSemikozov/html-css-course#readme",
+  "dependencies": {
+    "webpack": "^4.41.5",
+    "css-loader": "^3.4.2"
+  },
+  "devDependencies": {
+    "mini-css-extract-plugin": "^0.9.0",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  }
+}
