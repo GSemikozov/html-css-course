@@ -89,4 +89,11 @@ Playgrounds, или песочницы: `cssdeck.com` , `jsbin.com`, `jsfiddle.n
 ## TODO
 
 - подобрать материал базовый html css - до курса (пока только выписал ссылки на htmlbook.ru, не уверен что надо что-то еще. Но - все-таки поищу достойный видео-контент)
+  - https://html5book.ru/osnovy-html/
+  - https://html5book.ru/html-tags/
+  - http://belarusweb.net/html/html_zadachnik/sbornik_zadach_po_html.html
+  - http://htmlbook.ru/samcss/vvedenie-v-css
+  - https://html5book.ru/osnovy-css/
+  - http://belarusweb.net/css/css_zadachnik/sbornik_zadach_po_css.html
+  - интерактивный cheatsheet по css https://htmlcheatsheet.com/css/
 - подумать над тем можно ли использовать в проекте css-modules - сделать пример сборки (попробовал - нет, без html-in-js по-нормальному не обойтись)
