@@ -42,6 +42,10 @@
     margin-top: 2rem !important;
 }
 
+.mt-xxl {
+    margin-top: 4rem !important;
+}
+
 .ml-xs {
     margin-left: 0.25rem !important;
 }
@@ -107,6 +111,10 @@
 
 .text-secondary {
     color: var(--text-secondary);
+}
+
+.text-uppercase {
+    text-transform: uppercase;
 }
 
 .w-50 {
