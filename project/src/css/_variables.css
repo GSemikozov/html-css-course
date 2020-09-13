@@ -1,0 +1,47 @@
+:root {
+    /*color-scheme: light dark;*/ /* uncomment and delete tag in html head */
+
+    --white: #ffffff;
+    --black: #212429;
+    --primary-h: 228;
+    --primary-s: 81%;
+    --primary-l: 59%;
+    --primary: hsl(var(--primary-h), var(--primary-s), var(--primary-l));
+    --primary-lighten: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) + 10%));
+    --primary-darken: hsl(var(--primary-h), calc(var(--primary-s) - 12%), calc(var(--primary-l) - 14%));
+    --secondary-h: 255;
+    --secondary-s: 78%;
+    --secondary-l: 60%;
+    --secondary: hsl(var(--secondary-h), var(--secondary-s), var(--secondary-l));
+    --secondary-lighten: hsl(var(--secondary-h), var(--secondary-s), calc(var(--secondary-l) + 10%));
+    --secondary-darken: hsl(var(--secondary-h), calc(var(--secondary-s) - 12%), calc(var(--secondary-l) - 13%));
+    --pink: #F784AD;
+    --error: #F03D3E;
+    --success: #374FC7;
+    --grey-1: #F8F9FA;
+    --grey-2: #DDE2E5;
+    --grey-3: #ACB5BD;
+    --grey-4: #495057;
+    --text-primary: var(--black);
+    --text-secondary: var(--grey-3);
+    --active-text-color: var(--text-primary);
+
+    --main-bg: var(--light-bg);
+    --grey-bg: var(--grey-1);
+    --white-bg: var(--white);
+    --light-bg: var(--white);
+    --dark-bg: var(--black);
+    --card-bg: var(--white);
+
+    --font-color: var(--text-primary);
+    --input-text-color: var(--grey-4);
+
+    --font-primary: "";
+    --font-secondary: "";
+
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+}

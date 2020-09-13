@@ -1,0 +1,56 @@
+/*@media (prefers-color-scheme: light) {*/
+/*    .light-mode-toggler {*/
+/*        display: none;*/
+/*    }*/
+/*}*/
+
+/*@media (prefers-color-scheme: dark) {*/
+/*    .dark-mode-toggler {*/
+/*        display: none;*/
+/*    }*/
+/*    * {*/
+/*        --dark-bg: var(--black);*/
+/*        --light-bg: var(--grey-4);*/
+/*        --font-color: var(--white);*/
+/*    }*/
+/*}*/
+
+/* swith to dark mode when dark button checked */
+/*.light-mode-toggler:checked,*/
+/*.light-mode-toggler:checked + * + * {*/
+/*    --main-bg: #121212;*/
+/*    --font-color: #ffffff75;*/
+/*    --em-font-color: #ffffff87;*/
+/*}*/
+
+/* swith to light mode when light button checked */
+/*.light-mode-toggler:checked,*/
+/*.light-mode-toggler:checked + * {*/
+/*    --bg-color: #ffffff75;*/
+/*    --font-color: #121212;*/
+/*    --em-font-color: #121212;*/
+/*}*/
+
+/* Apply the filter for images in dark-theme via media query */
+/*@media (prefers-color-scheme: dark) {*/
+/*    img {*/
+/*        filter: brightness(.8) contrast(1.2);*/
+/*    }*/
+/*}*/
+
+html:not(.style-scope)[data-mode="dark"] {
+    /*--white: #ffffff75;*/
+    --main-bg: var(--black);
+    --font-color: #ffffff75;
+    --dark-bg: var(--grey-1);
+    --white-bg: var(--black);
+    --light-bg: var(--grey-4);
+    --grey-bg: var(--grey-4);
+    --card-bg: var(--black);
+    --active-text-color: var(--grey-2);
+    --input-text-color: var(--font-color);
+}
+
+html:not(.style-scope)[data-mode="dark"] img {
+    filter: brightness(.8) contrast(1.2);
+}

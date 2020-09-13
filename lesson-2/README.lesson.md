@@ -13,6 +13,13 @@
 5. css columns. Создадим новый блок - многоколоночный макет.
 6. Позиционирование - relative, absolute, static, fixed, sticky + паттерны использования.
 
+### details + summary https://habr.com/ru/post/477520/
+- dropdown
+- popover
+- toggle
+- accordion
+- modal
+
 ### компонент Card
 
 7. Создадим компонент карточки Card
@@ -39,3 +46,4 @@
 ## TODO
 
 добавить примеры для первых всех обозначенных тем (ждем дизайн)
+https://una.im/css-color-theming/ ? 

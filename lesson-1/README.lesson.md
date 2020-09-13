@@ -32,6 +32,9 @@ Playgrounds, или песочницы: `cssdeck.com` , `jsbin.com`, `jsfiddle.n
 Сайты где смотреть / читать / учиться:
 `htmlbook.ru`, `html5book.ru`, `css-tricks.com`, хабр, `css-live.ru`, `htmlacademy.ru`, `medium.com`, `stackoverflow.com`, `freecodecamp.org`, `dev.to`, `alligator.io`, `developer.mozilla.org`, `www.internet-technologies.ru` etc
 
+## Разница между reset.css и normalize.css
+- https://medium.com/@elad/normalize-css-or-css-reset-9d75175c5d1e
+
 ## Базовый html: разметка страницы
 
 - `HTML` - значение аббревиатуры?

@@ -1,0 +1,119 @@
+.tabs > input,
+.tabs .tabs__tab-content {
+    display: none;
+}
+
+#tab1:checked ~ section .tabs__tab-content-1,
+#tab2:checked ~ section .tabs__tab-content-2,
+#tab3:checked ~ section .tabs__tab-content-3,
+#tab4:checked ~ section .tabs__tab-content-4 {
+    display: block;
+}
+
+#tab1:checked ~ .tabs__nav label[for="tab1"],
+#tab2:checked ~ .tabs__nav label[for="tab2"],
+#tab3:checked ~ .tabs__nav label[for="tab3"],
+#tab4:checked ~ .tabs__nav label[for="tab4"] {
+    color: var(--active-text-color);
+    position: relative;
+}
+
+.tabs {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.tabs__menu {
+    display: flex;
+}
+
+.tabs__menu > li {
+    margin-right: 40px;
+}
+
+.tabs__menu > li:last-child {
+    margin-right: 0;
+}
+
+.tabs__menu > li label {
+    cursor: pointer;
+    position: relative;
+    color: var(--grey-3);
+    padding: 0.5rem 0;
+    border-bottom: 5px solid transparent;
+    display: inline-flex;
+    transition: 250ms all;
+    white-space: nowrap;
+}
+
+.tabs__menu > li label:hover,
+.tabs__menu > li label:active,
+.tabs__menu > li label:focus {
+    color: var(--active-text-color);
+}
+
+.tabs__menu > li label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    top: 100%;
+    background-color: var(--dark-bg);
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+#tab1:checked ~ .tabs__nav label[for="tab1"]:after,
+#tab2:checked ~ .tabs__nav label[for="tab2"]:after,
+#tab3:checked ~ .tabs__nav label[for="tab3"]:after,
+#tab4:checked ~ .tabs__nav label[for="tab4"]:after,
+.tabs__nav label:hover:after {
+    transform: scaleX(1);
+}
+
+.tabs__nav {
+    overflow: hidden;
+}
+
+.tabs__menu {
+    height: 40px;
+    width: 100%;
+    overflow-x: scroll;
+}
+
+.tabs__menu::-webkit-scrollbar {
+    display: none;
+}
+
+.tabs .tabs__tab-content {
+    background-color: var(--white-bg);
+    padding: 1.5rem 0;
+}
+
+@media all and (min-width: 768px) {
+    .tabs .tabs__tab-content {
+        padding: 3rem 0;
+    }
+}
+
+.tabs .tabs__tab-content.-bg-grey {
+    background-color: var(--grey-bg);
+}
+
+/* with divider */
+.tabs__divider {
+    position: absolute;
+    width: 100vw;
+    left: 50%;
+    margin: 0;
+    transform: translate(-50%, 0);
+    height: 1px;
+    background-color: var(--grey-2);
+}
+
+.tabs pre {
+    overflow-x: auto;
+}
