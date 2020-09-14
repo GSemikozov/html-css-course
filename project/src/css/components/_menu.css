@@ -1,0 +1,35 @@
+.sidebar,
+.sidebar__menu,
+.modal__menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar__menu a,
+.modal__menu a {
+    display: inline-flex;
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+
+.sidebar__menu a {
+    margin-bottom: 0.25rem;
+}
+
+.modal__menu a {
+    margin-bottom: 1rem;
+}
+
+.sidebar__menu a:hover,
+.modal__menu a:hover {
+    opacity: 0.8;
+}
+
+.sidebar__menu a.active,
+.modal__menu a.active {
+    color: #D84910;
+}
+
+.modal__menu-title {
+    color: var(--grey-3);
+}
