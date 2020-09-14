@@ -30,6 +30,25 @@
     border-radius: 0.5rem;
 }
 
+.modal.-portable .modal__window {
+    border-radius: 0;
+    top: 0;
+    left: 0;
+    transform: none;
+    padding: 1rem;
+    height: 100vh;
+    background-color: var(--grey-1);
+}
+
+.modal.-portable .modal__close {
+    right: auto;
+    left: 1rem;
+    padding: 3px;
+    border-radius: 50%;
+    background-color: var(--grey-2);
+    display: inline-flex;
+}
+
 .modal__close {
     position: absolute;
     right: 1rem;
@@ -40,4 +59,11 @@
 .modal__close .svg-icon {
     font-size: 24px;
     stroke: var(--grey-4);
+}
+
+.modal__divider {
+    height: 1px;
+    width: 100%;
+    background-color: var(--grey-2);
+    margin: 1.5rem 0;
 }

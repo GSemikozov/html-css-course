@@ -15,12 +15,38 @@
     <header class="header">
       <div class="container">
         <div class="header__inner">
-          <div class="header__mobile-menu-toggle hidden-md">
+          <a href="#mobile-menu" class="header__mobile-menu-toggle hidden-md">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                  viewBox="0 0 24 24" class="svg-icon" fill="currentColor">
               <use xlink:href="assets/icons/sprite.svg#menu"></use>
             </svg>
+          </a>
+          <!-- Mobile Modal Window - start -->
+          <div id="mobile-menu" class="modal -portable">
+            <div class="modal__window">
+              <a href="#" title="Close" class="modal__close">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                     viewBox="0 0 24 24" class="svg-icon" fill="currentColor">
+                  <use xlink:href="assets/icons/sprite.svg#cross"></use>
+                </svg>
+              </a>
+              <div class="modal__body">
+                <div class="header__logo d-flex" style="justify-content: center;">
+                  <svg fill="none" height="32" viewBox="0 0 110 32" width="110" xmlns="http://www.w3.org/2000/svg"><g><path d="m0 1h30v30h-30z"/><rect height="32" rx="16" width="32" x="38"/><path d="m78 0 32 32h-32z"/></g></svg>
+                </div>
+                <div class="modal__divider"></div>
+                <aside class="sidebar">
+                  <h4 class="modal__menu-title mb-md">Organisms</h4>
+                  <nav class="modal__menu">
+                    <a href="#" class="active">Modal</a>
+                    <a href="#">Accordion</a>
+                    <a href="#">Form group</a>
+                  </nav>
+                </aside>
+              </div>
+            </div>
           </div>
+          <!-- Mobile Modal Window - end -->
           <div class="header__logo">
             <svg fill="none" height="32" viewBox="0 0 110 32" width="110" xmlns="http://www.w3.org/2000/svg"><g><path d="m0 1h30v30h-30z"/><rect height="32" rx="16" width="32" x="38"/><path d="m78 0 32 32h-32z"/></g></svg>
           </div>
@@ -123,7 +149,7 @@
                     <img src="assets/images/components/custom-form-elements.png" alt="card img">
                   </div>
                   <div class="card__footer">
-                    <h4 class="card__title font-weight-semibold">Custom form elements</h4>
+                    <h4 class="card__title font-weight-semibold">Forms</h4>
                     <p>Molecules</p>
                   </div>
                 </div>
@@ -140,14 +166,36 @@
             </div>
           </div>
           <div class="tabs__tab-content -bg-grey tabs__tab-content-2">
+<!--            <div class="container mb-xl">-->
+<!--              <h3 class="mb-xl text-secondary text-uppercase">Typography</h3>-->
+<!--              <h1>Hello, world!</h1>-->
+<!--              <h2 class="mb-xs">Hello, world!</h2>-->
+<!--              <h3 class="mb-sm">Hello, world!</h3>-->
+<!--              <h4 class="mb-md">Hello, world!</h4>-->
+<!--              <h5 class="mb-md">Hello, world!</h5>-->
+<!--              <h6>Hello, world!</h6>-->
+<!--            </div>-->
             <div class="container mb-xl">
-              <h3 class="mb-xl text-secondary text-uppercase">Typography</h3>
-              <h1>Hello, world!</h1>
-              <h2 class="mb-xs">Hello, world!</h2>
-              <h3 class="mb-sm">Hello, world!</h3>
-              <h4 class="mb-md">Hello, world!</h4>
-              <h5 class="mb-md">Hello, world!</h5>
-              <h6>Hello, world!</h6>
+              <div class="card-grid">
+                <div class="card">
+                  <div class="card__body">
+                    <img src="assets/images/components/tooltip.png" alt="card img">
+                  </div>
+                  <div class="card__footer">
+                    <h4 class="card__title font-weight-semibold">Tooltip</h4>
+                    <p>Atom</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card__body">
+                    <img src="assets/images/components/avatar.png" alt="card img">
+                  </div>
+                  <div class="card__footer">
+                    <h4 class="card__title font-weight-semibold">Avatar</h4>
+                    <p>Atom</p>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="container mb-xl">
               <h3 class="mb-xl text-secondary text-uppercase mt-xxl">Buttons</h3>
@@ -227,6 +275,28 @@
           </div>
           <div class="tabs__tab-content -bg-grey tabs__tab-content-3">
             <div class="container mb-xl">
+              <div class="card-grid">
+                <div class="card">
+                  <div class="card__body">
+                    <img src="assets/images/components/custom-form-elements.png" alt="card img">
+                  </div>
+                  <div class="card__footer">
+                    <h4 class="card__title font-weight-semibold">Custom form elements</h4>
+                    <p>Molecules</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card__body">
+                    <img src="assets/images/components/calendar.png" alt="card img">
+                  </div>
+                  <div class="card__footer">
+                    <h4 class="card__title font-weight-semibold">Calendar</h4>
+                    <p>Molecule</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container mb-xl">
               <h3 class="mb-xl text-secondary text-uppercase">Skeleton</h3>
               <div class="loading-skeleton w-50">
                 <div class="d-flex mb-md">
@@ -285,6 +355,28 @@
             </div>
           </div>
           <div class="tabs__tab-content -bg-grey tabs__tab-content-4">
+            <div class="container mb-xl">
+              <div class="card-grid">
+                <a href="component.html" class="card">
+                  <div class="card__body">
+                    <img src="assets/images/components/modal.png" alt="card img">
+                  </div>
+                  <div class="card__footer">
+                    <h4 class="card__title font-weight-semibold">Modal</h4>
+                    <p>Organism</p>
+                  </div>
+                </a>
+                <div class="card">
+                  <div class="card__body">
+                    <img src="assets/images/components/histogram.png" alt="card img">
+                  </div>
+                  <div class="card__footer">
+                    <h4 class="card__title font-weight-semibold">Histogram</h4>
+                    <p>Organism</p>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="container mb-xl">
               <h3 class="mb-xl text-secondary text-uppercase">Modal</h3>
               <div class="modal-trigger">

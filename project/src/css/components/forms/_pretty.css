@@ -206,19 +206,16 @@ input[type=checkbox], input[type=radio] {
 }
 
 .pretty.-toggle.-has-icons .svg-icon {
-    /*stroke: var(--grey-2);*/
-    /*fill: var(--white);*/
     font-size: 1.5rem;
 }
 
 .pretty.-toggle.-has-icons input ~ .svg-icon,
-.pretty.-toggle.-has-icons input:checked ~ .svg-icon ~ .svg-icon {
-    fill: var(--black);
+.pretty.-toggle.-has-icons input:checked + .svg-icon + .state + .svg-icon {
+    fill: var(--grey-3);
 }
 
-.pretty.-toggle.-has-icons input:checked ~ .svg-icon,
-.pretty.-toggle.-has-icons input ~ .svg-icon ~ .svg-icon {
-    stroke: var(--grey-2);
+.pretty.-toggle.-has-icons input + .svg-icon + .state + .svg-icon {
+    fill: var(--black);
 }
 
 /* disabled */

@@ -9,7 +9,7 @@
 }
 
 .expanded[open] {
-    height: 128px;
+    height: 186px;
 }
 
 .expanded__trigger {
@@ -33,4 +33,10 @@
 
 .expanded__content {
     padding: 0 2rem 1.5rem 2rem;
+}
+
+@media all and (min-width: 767px) {
+    .expanded[open] {
+        height: 128px;
+    }
 }
