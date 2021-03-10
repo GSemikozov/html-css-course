@@ -1,244 +1,262 @@
 .pretty {
-    position: relative;
-    display: inline-block;
-    margin-right: 2rem;
-    white-space: nowrap;
-    line-height: 1;
+  position: relative;
+  display: inline-block;
+  margin-right: 2rem;
+  white-space: nowrap;
+  line-height: 1;
 }
 
-[role=button], a, area, button, input:not([type=range]), label, select, summary, textarea {
-    touch-action: manipulation; /* check it */
+[role="button"],
+a,
+area,
+button,
+input:not([type="range"]),
+label,
+select,
+summary,
+textarea {
+  touch-action: manipulation; /* check it */
 }
 
-input[type=checkbox], input[type=radio] {
-    box-sizing: border-box;
-    padding: 0;
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
 }
-[role=button], a, area, button, input:not([type=range]), label, select, summary, textarea {
-    touch-action: manipulation;
+[role="button"],
+a,
+area,
+button,
+input:not([type="range"]),
+label,
+select,
+summary,
+textarea {
+  touch-action: manipulation;
 }
 
 .pretty input {
-    position: absolute;
-    left: 0;
-    top: 0;
-    min-width: 1.75rem;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-    opacity: 0;
-    margin: 0;
-    padding: 0;
-    cursor: pointer;
-    overflow: visible;
+  position: absolute;
+  left: 0;
+  top: 0;
+  min-width: 1.75rem;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  overflow: visible;
 }
 
 .pretty .state {
-    line-height: 1.75rem;
+  line-height: 1.75rem;
 }
 
 .pretty .state label {
-    position: initial;
-    display: inline-block;
-    font-weight: 400;
-    margin: 0;
-    text-indent: 2.5rem;
-    min-width: 2.5rem;
-    line-height: 1.2;
-    font-size: 1rem;
-    color: var(--grey-4);
+  position: initial;
+  display: inline-block;
+  font-weight: 400;
+  margin: 0;
+  text-indent: 2.5rem;
+  min-width: 2.5rem;
+  line-height: 1.2;
+  font-size: 1rem;
+  color: var(--grey-4);
 }
 
 .pretty.-round .state label:after,
 .pretty.-round .state label:before {
-    border-radius: 100%;
+  border-radius: 100%;
 }
 
 .pretty .state label:after,
 .pretty .state label:before {
-    content: '';
-    width: 1.75rem;
-    height: 1.75rem;
-    display: block;
-    box-sizing: border-box;
-    border-radius: 0;
-    border: 1px solid transparent;
-    z-index: 0;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background-color: transparent;
+  content: "";
+  width: 1.75rem;
+  height: 1.75rem;
+  display: block;
+  box-sizing: border-box;
+  border-radius: 0;
+  border: 1px solid transparent;
+  z-index: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: transparent;
 }
 
 .pretty.-default input:checked ~ .state label:after {
-    background-color: var(--grey-2) !important;
+  background-color: var(--grey-2) !important;
 }
 
 .pretty.-default .state label:after {
-    transform: scale(.6);
+  transform: scale(0.6);
 }
 
 .pretty .state label:before {
-    border: 1px solid var(--grey-2);
+  border: 1px solid var(--grey-2);
 }
 
 /* checkbox */
 .pretty input:checked ~ .state label:before {
-    border: 2px solid var(--primary);
+  border: 2px solid var(--primary);
 }
 
-.pretty.-curve .state label:after, .pretty.-curve .state label:before {
-    border-radius: 20%;
+.pretty.-curve .state label:after,
+.pretty.-curve .state label:before {
+  border-radius: 20%;
 }
 
 .pretty.-default input:checked ~ .state label:after {
-    background-color: var(--primary) !important;
+  background-color: var(--primary) !important;
 }
 
 /* with inline svg icon */
 
 .pretty.-svg .state .svg {
-    position: absolute;
-    font-size: 1rem;
-    width: calc(1rem + 2px);
-    height: calc(1rem + 2px);
-    z-index: 1;
-    text-align: center;
-    line-height: normal;
-    top: 50%;
-    left: 0.3rem;
-    transform: translate(0, -50%);
-    border: 1px solid transparent;
-    opacity: 0;
+  position: absolute;
+  font-size: 1rem;
+  width: calc(1rem + 2px);
+  height: calc(1rem + 2px);
+  z-index: 1;
+  text-align: center;
+  line-height: normal;
+  top: 50%;
+  left: 0.3rem;
+  transform: translate(0, -50%);
+  border: 1px solid transparent;
+  opacity: 0;
 }
 
 .pretty input:checked ~ .state.-success .icon,
 .pretty input:checked ~ .state.-success .svg {
-    color: #fff;
-    stroke: #fff;
+  color: #fff;
+  stroke: #fff;
 }
 
 .pretty.-svg input:checked ~ .state .svg {
-    opacity: 1;
+  opacity: 1;
 }
 
 .pretty.-svg .state label:after {
-    transform: scale(1);
+  transform: scale(1);
 }
 
 /* with pulse animation */
 
 .pretty.-pulse:not(.-toggle) input:checked ~ .state label:before {
-    animation: pulse 0.5s;
+  animation: pulse 0.5s;
 }
 
 @keyframes pulse {
-    0% {
-        box-shadow: 0 0 0 0 #bdc3c7;
-    }
-    100% {
-        box-shadow: 0 0 0 1.5rem rgba(189, 195, 199, 0);
-    }
+  0% {
+    box-shadow: 0 0 0 0 #bdc3c7;
+  }
+  100% {
+    box-shadow: 0 0 0 1.5rem rgba(189, 195, 199, 0);
+  }
 }
 
 /* toggle */
 
 .pretty.-toggle input,
 .pretty.-toggle .state label {
-    min-width: 3.25rem;
+  min-width: 3.25rem;
 }
 
 .pretty.-toggle .state {
-    position: relative;
+  position: relative;
 }
 
 .pretty.-toggle .state:before {
-    content: '';
-    border: 1px solid var(--grey-2);
-    border-radius: 1rem;
-    width: 3.25rem;
-    box-sizing: border-box;
-    height: 1.75rem;
-    position: absolute;
-    top: 0;
-    z-index: 0;
-    transition: all .5s ease;
+  content: "";
+  border: 1px solid var(--grey-2);
+  border-radius: 1rem;
+  width: 3.25rem;
+  box-sizing: border-box;
+  height: 1.75rem;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  transition: all 0.5s ease;
 }
 
 .pretty.-toggle .state label {
-    text-indent: 4em;
+  text-indent: 4em;
 }
 
 .pretty.-toggle .state label:after,
 .pretty.-toggle .state label:before {
-    transition: left .5s ease;
-    border-radius: 100%;
-    left: 0;
-    border-color: transparent;
-    transform: scale(.8);
+  transition: left 0.5s ease;
+  border-radius: 100%;
+  left: 0;
+  border-color: transparent;
+  transform: scale(0.8);
 }
 
 .pretty.-toggle .state label:after {
-    background-color: var(--grey-2) !important;
+  background-color: var(--grey-2) !important;
 }
 
 .pretty.-toggle input:checked ~ .state:before {
-    background-color: var(--primary);
-    border-color: var(--primary);
+  background-color: var(--primary);
+  border-color: var(--primary);
 }
 
 .pretty.-toggle input:checked ~ .state label:before {
-    opacity: 0;
+  opacity: 0;
 }
 
 .pretty.-toggle input:checked ~ .state label:after {
-    background-color: var(--white) !important;
-    left: 1.5rem;
+  background-color: var(--white) !important;
+  left: 1.5rem;
 }
 
 .pretty.-toggle.-has-icons {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .pretty.-toggle.-has-icons .state {
-    margin: 0 0.875rem;
+  margin: 0 0.875rem;
 }
 
 .pretty.-toggle.-has-icons .svg-icon {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .pretty.-toggle.-has-icons input ~ .svg-icon,
 .pretty.-toggle.-has-icons input:checked + .svg-icon + .state + .svg-icon {
-    fill: var(--grey-3);
+  fill: var(--grey-3);
 }
 
 .pretty.-toggle.-has-icons input + .svg-icon + .state + .svg-icon {
-    fill: var(--black);
+  fill: var(--black);
 }
 
 /* disabled */
 
 .pretty input:disabled,
 .pretty input:disabled + .state {
-    cursor: default;
-    pointer-events: none;
+  cursor: default;
+  pointer-events: none;
 }
 
 .pretty input:disabled + .state label {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 .pretty:not(.-toggle) input:disabled + .state label:before {
-    background-color: var(--grey-2);
+  background-color: var(--grey-2);
 }
 
 .pretty.-toggle input:disabled + .state label:before,
 .pretty.-toggle input:disabled + .state label:after {
-    background-color: var(--grey-3) !important;
+  background-color: var(--grey-3) !important;
 }
 
 .pretty.-toggle input:disabled + .state:before {
-    background-color: var(--grey-2);
+  background-color: var(--grey-2);
 }

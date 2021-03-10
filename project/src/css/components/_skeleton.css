@@ -1,10 +1,10 @@
 .loading-skeleton {
-    line-height: 0;
-    padding: 24px;
-    width: 100%;
-    border: 1px solid var(--grey-3);
-    border-radius: 8px;
-    font-size: 0;
+  line-height: 0;
+  padding: 24px;
+  width: 100%;
+  border: 1px solid var(--grey-3);
+  border-radius: 8px;
+  font-size: 0;
 }
 
 .loading-common,
@@ -13,56 +13,61 @@
 .middle-loading-line,
 .block-skeleton,
 .circle-skeleton {
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-    animation-name: backgroundMovement;
-    animation-timing-function: linear;
-    background: var(--grey-2);
-    background: linear-gradient(267.58deg, var(--grey-2) 0%, var(--grey-1) 80%, var(--grey-2) 100%);
-    background-size: 200%;
-    display: inline-block;
-    width: 100%;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: backgroundMovement;
+  animation-timing-function: linear;
+  background: var(--grey-2);
+  background: linear-gradient(
+    267.58deg,
+    var(--grey-2) 0%,
+    var(--grey-1) 80%,
+    var(--grey-2) 100%
+  );
+  background-size: 200%;
+  display: inline-block;
+  width: 100%;
 }
 
 .loading-line,
 .short-loading-line,
 .middle-loading-line {
-    height: 20px;
-    border-radius: 2px;
+  height: 20px;
+  border-radius: 2px;
 }
 
 .short-loading-line {
-    width: 50%;
+  width: 50%;
 }
 
 .middle-loading-line {
-    width: 70%;
+  width: 70%;
 }
 
 .block-skeleton {
-    height: 40px;
-    border-radius: 8px;
+  height: 40px;
+  border-radius: 8px;
 }
 
 .circle-skeleton {
-    height: 64px;
-    width: 64px;
-    border-radius: 50%;
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
 }
 
 .white-line {
-    background: var(--white);
-    border-radius: 4px;
-    height: 4px;
+  background: var(--white);
+  border-radius: 4px;
+  height: 4px;
 }
 
 @keyframes backgroundMovement {
-    0% {
-        background-position: 100%;
-    }
+  0% {
+    background-position: 100%;
+  }
 
-    100% {
-        background-position: -100%;
-    }
+  100% {
+    background-position: -100%;
+  }
 }

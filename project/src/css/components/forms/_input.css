@@ -1,88 +1,88 @@
 .form-group {
-    margin-bottom: 1rem;
-    display: inline-flex;
-    flex-direction: column;
+  margin-bottom: 1rem;
+  display: inline-flex;
+  flex-direction: column;
 }
 
 .form-group__label {
-    font-weight: 500;
-    font-size: 0.75rem;
-    line-height: 1.2;
-    letter-spacing: 0.04rem;
-    text-transform: uppercase;
-    color: var(--grey-3);
-    margin-bottom: 5px;
-    display: inline-flex;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 1.2;
+  letter-spacing: 0.04rem;
+  text-transform: uppercase;
+  color: var(--grey-3);
+  margin-bottom: 5px;
+  display: inline-flex;
 }
 
 .form-group__input {
-    position: relative;
-    display: inline-flex;
+  position: relative;
+  display: inline-flex;
 }
 
 .form-group__input > input {
-    padding: 0.875rem 3.25rem 0.875rem 1.5rem;
-    height: 3.5rem;
-    border-radius: 0.5rem;
-    border: 1px solid var(--grey-2);
-    background-color: var(--white-bg);
-    box-shadow: 0 1px 1px rgba(51, 154, 240, 0.1);
-    color: var(--input-text-color);
-    font-size: 1.25rem;
-    line-height: 1.2;
-    outline: none;
+  padding: 0.875rem 3.25rem 0.875rem 1.5rem;
+  height: 3.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--grey-2);
+  background-color: var(--white-bg);
+  box-shadow: 0 1px 1px rgba(51, 154, 240, 0.1);
+  color: var(--input-text-color);
+  font-size: 1.25rem;
+  line-height: 1.2;
+  outline: none;
 }
 
 .form-group__input > input::placeholder {
-    color: var(--grey-2);
+  color: var(--grey-2);
 }
 
 .form-group__input > input:focus,
 .form-group__input > input:active {
-    border-color: var(--primary);
+  border-color: var(--primary);
 }
 
 .form-group__status {
-    display: inline-flex;
-    margin-bottom: 0.25rem;
-    color: var(--grey-3);
-    font-weight: 500;
-    font-size: 0.75rem;
-    line-height: 1.2;
+  display: inline-flex;
+  margin-bottom: 0.25rem;
+  color: var(--grey-3);
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 1.2;
 }
 
 .form-group.-error .form-group__icon,
 .form-group.-success .form-group__icon {
-    content: "";
-    position: absolute;
-    right: 18px;
-    top: 50%;
-    transform: translate(0, -50%);
-    width: 24px;
-    height: 24px;
-    font-size: 24px;
+  content: "";
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
 }
 
 .form-group.-error .form-group__icon {
-    fill: var(--error);
+  fill: var(--error);
 }
 
 .form-group.-error .form-group__input > input {
-    border-color: var(--error);
+  border-color: var(--error);
 }
 
 .form-group.-error .form-group__status {
-    color: var(--error);
+  color: var(--error);
 }
 
 .form-group.-success .form-group__icon {
-    fill: var(--success);
+  fill: var(--success);
 }
 
 .form-group.-success .form-group__input > input {
-    border-color: var(--success);
+  border-color: var(--success);
 }
 
 .form-group.-success .form-group__status {
-    color: var(--success);
+  color: var(--success);
 }

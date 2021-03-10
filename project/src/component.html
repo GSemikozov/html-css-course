@@ -1,116 +1,165 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/index.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/index.css" />
 
-  <title>HTML/CSS project - Component</title>
-</head>
-<body>
-<main class="bg-grey">
-  <header class="header">
-    <div class="container">
-      <div class="header__inner">
-        <div class="header__mobile-menu-toggle hidden-md">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-               viewBox="0 0 24 24" class="svg-icon" fill="currentColor">
-            <use xlink:href="assets/icons/sprite.svg#menu"></use>
-          </svg>
-        </div>
-        <a href="index.html" class="header__logo">
-          <svg fill="none" height="32" viewBox="0 0 110 32" width="110" xmlns="http://www.w3.org/2000/svg"><g fill="#212429"><path d="m0 1h30v30h-30z"/><rect height="32" rx="16" width="32" x="38"/><path d="m78 0 32 32h-32z"/></g></svg>
-        </a>
-        <div class="header__nav hidden-sm">
-          <nav class="header__navbar">
-            <a href="#" class="active">Components</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-          </nav>
-          <div class="header__mode-toggler">
-            <div class="pretty -toggle -has-icons toggle-mode-input mr-0">
-              <input type="checkbox">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                   viewBox="0 0 24 24" class="svg-icon" fill="currentColor" id="light-theme-icon">
-                <use xlink:href="assets/icons/sprite.svg#sun"></use>
-              </svg>
-              <div class="state">
-                <label></label>
-              </div>
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                   viewBox="0 0 24 24" class="svg-icon" fill="currentColor" id="dark-theme-icon">
-                <use xlink:href="assets/icons/sprite.svg#moon"></use>
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-  <section class="container flex-grow">
-    <div class="inner-page">
-      <aside class="sidebar hidden-sm">
-        <h4 class="mb-md">Organisms</h4>
-        <nav class="sidebar__menu">
-          <a href="#" class="active">Modal</a>
-          <a href="#">Accordion</a>
-          <a href="#">Form group</a>
-        </nav>
-      </aside>
-      <div class="inner-page__content bg-white box-shadow mb-xl">
+    <title>HTML/CSS project - Component</title>
+  </head>
+  <body>
+    <main class="bg-grey">
+      <header class="header">
         <div class="container">
-          <h3 class="mb-md">Modal</h3>
-          <div class="modal-trigger mb-xl">
-            <a class="button -primary" href="#modal">Basic CSS-Only Modal</a>
-          </div>
-          <div id="modal" class="modal">
-            <div class="modal__window">
-              <a href="#" title="Close" class="modal__close">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                     viewBox="0 0 24 24" class="svg-icon" fill="currentColor">
-                  <use xlink:href="assets/icons/sprite.svg#cross"></use>
-                </svg>
-              </a>
-              <div class="modal__body">
-                <p class="mb-md">A CSS-only modal based on the :target pseudo-class. Hope you find it helpful.</p>
-                <div class="form-group w-100">
-                  <label class="form-group__label" for="input4">Name</label>
-                  <div class="form-group__input">
-                    <input type="text" id="input4">
+          <div class="header__inner">
+            <div class="header__mobile-menu-toggle hidden-md">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 24 24"
+                class="svg-icon"
+                fill="currentColor"
+              >
+                <use xlink:href="assets/icons/sprite.svg#menu"></use>
+              </svg>
+            </div>
+            <a href="index.html" class="header__logo">
+              <svg
+                fill="none"
+                height="32"
+                viewBox="0 0 110 32"
+                width="110"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g fill="#212429">
+                  <path d="m0 1h30v30h-30z" />
+                  <rect height="32" rx="16" width="32" x="38" />
+                  <path d="m78 0 32 32h-32z" />
+                </g>
+              </svg>
+            </a>
+            <div class="header__nav hidden-sm">
+              <nav class="header__navbar">
+                <a href="#" class="active">Components</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+              </nav>
+              <div class="header__mode-toggler">
+                <div class="pretty -toggle -has-icons toggle-mode-input mr-0">
+                  <input type="checkbox" />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 24 24"
+                    class="svg-icon"
+                    fill="currentColor"
+                    id="light-theme-icon"
+                  >
+                    <use xlink:href="assets/icons/sprite.svg#sun"></use>
+                  </svg>
+                  <div class="state">
+                    <label></label>
                   </div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 24 24"
+                    class="svg-icon"
+                    fill="currentColor"
+                    id="dark-theme-icon"
+                  >
+                    <use xlink:href="assets/icons/sprite.svg#moon"></use>
+                  </svg>
                 </div>
-                <div class="form-group w-100">
-                  <label class="form-group__label" for="input5">Email</label>
-                  <div class="form-group__input">
-                    <input type="email" id="input5">
-                  </div>
-                </div>
-                <button type="submit" class="button -primary mt-md w-50">Submit</button>
               </div>
             </div>
           </div>
         </div>
-        <div class="tabs">
-          <input checked="checked" id="tab1" type="radio" name="tabs" />
-          <input id="tab2" type="radio" name="tabs" />
-          <nav class="tabs__nav">
-            <ul class="tabs__menu">
-              <li>
-                <label for="tab1">HTML</label>
-              </li>
-              <li>
-                <label for="tab2">CSS</label>
-              </li>
-            </ul>
-          </nav>
-          <div class="tabs__divider"></div>
-          <section>
-            <div class="tabs__tab-content tabs__tab-content-1">
-              <figure>
-                <pre>
+      </header>
+      <section class="container flex-grow">
+        <div class="inner-page">
+          <aside class="sidebar hidden-sm">
+            <h4 class="mb-md">Organisms</h4>
+            <nav class="sidebar__menu">
+              <a href="#" class="active">Modal</a>
+              <a href="#">Accordion</a>
+              <a href="#">Form group</a>
+            </nav>
+          </aside>
+          <div class="inner-page__content bg-white box-shadow mb-xl">
+            <div class="container">
+              <h3 class="mb-md">Modal</h3>
+              <div class="modal-trigger mb-xl">
+                <a class="button -primary" href="#modal"
+                  >Basic CSS-Only Modal</a
+                >
+              </div>
+              <div id="modal" class="modal">
+                <div class="modal__window">
+                  <a href="#" title="Close" class="modal__close">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      viewBox="0 0 24 24"
+                      class="svg-icon"
+                      fill="currentColor"
+                    >
+                      <use xlink:href="assets/icons/sprite.svg#cross"></use>
+                    </svg>
+                  </a>
+                  <div class="modal__body">
+                    <p class="mb-md">
+                      A CSS-only modal based on the :target pseudo-class. Hope
+                      you find it helpful.
+                    </p>
+                    <div class="form-group w-100">
+                      <label class="form-group__label" for="input4">Name</label>
+                      <div class="form-group__input">
+                        <input type="text" id="input4" />
+                      </div>
+                    </div>
+                    <div class="form-group w-100">
+                      <label class="form-group__label" for="input5"
+                        >Email</label
+                      >
+                      <div class="form-group__input">
+                        <input type="email" id="input5" />
+                      </div>
+                    </div>
+                    <button type="submit" class="button -primary mt-md w-50">
+                      Submit
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tabs">
+              <input checked="checked" id="tab1" type="radio" name="tabs" />
+              <input id="tab2" type="radio" name="tabs" />
+              <nav class="tabs__nav">
+                <ul class="tabs__menu">
+                  <li>
+                    <label for="tab1">HTML</label>
+                  </li>
+                  <li>
+                    <label for="tab2">CSS</label>
+                  </li>
+                </ul>
+              </nav>
+              <div class="tabs__divider"></div>
+              <section>
+                <div class="tabs__tab-content tabs__tab-content-1">
+                  <figure>
+                    <pre>
                   <code>
 &lt;div id="modal-window" class="modal"&gt;
   &lt;div class="modal__window"&gt;
@@ -138,11 +187,11 @@
 &lt;/div&gt;
                   </code>
                 </pre>
-              </figure>
-            </div>
-            <div class="tabs__tab-content tabs__tab-content-2">
-              <figure>
-                <pre>
+                  </figure>
+                </div>
+                <div class="tabs__tab-content tabs__tab-content-2">
+                  <figure>
+                    <pre>
                   <code>
 .modal {
     position: fixed;
@@ -189,21 +238,23 @@
 }
                   </code>
                 </pre>
-              </figure>
+                  </figure>
+                </div>
+              </section>
             </div>
-          </section>
+          </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <footer class="bg-grey">
-    <div class="container">
-      <p class="text-center text-secondary mb-xl">Reusable component library</p>
-    </div>
-  </footer>
-</main>
+      </section>
+      <footer class="bg-grey">
+        <div class="container">
+          <p class="text-center text-secondary mb-xl">
+            Reusable component library
+          </p>
+        </div>
+      </footer>
+    </main>
 
-<!-- Optional JavaScript -->
-<script src="js/index.js"></script>
-</body>
+    <!-- Optional JavaScript -->
+    <script src="js/index.js"></script>
+  </body>
 </html>
